@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import * as firebase from "firebase";
 
 function Score() {
   const uid = firebase.auth().currentUser.uid;
   const [studentName, setName] = useState("");
-  // const [studentQuiz, setQuiz] = useState([]);
+  const [studentQuiz, setQuiz] = useState([]);
+  const [studentExam, setExam] = useState([]);
+  const [studentHW, setHW] = useState([]);
   const handleClick = () => {
     firebase
       .auth()
@@ -13,22 +15,40 @@ function Score() {
         // An error happened.
       });
   };
-  firebase
+  useEffect(()=>{
+     firebase
     .database()
     .ref("Student/" + uid)
     .once("value")
     .then(function(snapshot) {
       setName(snapshot.val().name);
-      // setQuiz(snapshot.val().quiz);
+      setQuiz(snapshot.val().quiz);
+      setExam(snapshot.val().exam);
+      setHW(snapshot.val().homework);
     });
+  })
+ 
   return (
     <div>
       <p>{studentName}</p>
-      {/* <ul>
+      <ul>
+        Quiz:
         {studentQuiz.map(item => (
-          <li>{item}</li>
+          <li key={item}>{item}</li>
         ))}
-      </ul> */}
+      </ul>
+      <ul>
+        Exam:
+        {studentExam.map(item => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+      <ul>
+        Homework:
+        {studentHW.map(item => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
       <button type="button" onClick={handleClick}>
         登出
       </button>
