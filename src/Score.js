@@ -44,21 +44,21 @@ function Score() {
       </div>
       <div class="info">
         <ol>
-          <p class="subTitle">Quiz</p>
-          {studentQuiz.map(item => (
-            <li key={item}>{item}</li>
+          <p class="subTitle">测验</p>
+          {studentQuiz.map((item, index) => (
+          <li key={item}><p class="listCounter">{index+1}</p><div class="number">{item}</div></li>
           ))}
         </ol>
         <ol>
-          <p class="subTitle">Exam</p>
-          {studentExam.map(item => (
-            <li key={item}>{item}</li>
+          <p class="subTitle">考试</p>
+          {studentExam.map((item, index) => (
+            <li key={item}><p class="listCounter">{index+1}</p><div class="number">{item}</div></li>
           ))}
         </ol>
         <ol>
-          <p class="subTitle">Homework</p>
-          {studentHW.map(item => (
-            <li key={item}>{item}</li>
+          <p class="subTitle">作业</p>
+          {studentHW.map((item, index) => (
+            <li key={item}><p class="listCounter">{index+1}</p><div class="number">{item}</div></li>
           ))}
         </ol>
       </div>
