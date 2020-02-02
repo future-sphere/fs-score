@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import Login from "./Login";
 import Score from "./Score";
+import Admin from "./Admin";
 import * as serviceWorker from "./serviceWorker";
 import * as firebase from "firebase";
 
@@ -20,7 +21,18 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.auth().onAuthStateChanged(firebaseUser => {
   if (firebaseUser) {
-    ReactDOM.render(<Score />, document.getElementById("root"));
+    const uid = firebase.auth().currentUser.uid;
+    firebase
+      .database()
+      .ref("Student/" + uid)
+      .once("value")
+      .then(function(snapshot) {
+        if (snapshot.val().class == "管理员") {
+          ReactDOM.render(<Admin />, document.getElementById("root"));
+        } else {
+          ReactDOM.render(<Score />, document.getElementById("root"));
+        }
+      });
   } else {
     ReactDOM.render(<Login />, document.getElementById("root"));
   }
