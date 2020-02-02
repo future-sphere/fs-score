@@ -15,7 +15,14 @@ function Login() {
         var errorMessage = error.message;
         // [START_EXCLUDE]
         if (errorCode === "auth/wrong-password") {
-          alert("Wrong password.");
+          alert("密码错误");
+        } else if (
+          errorMessage ==
+          "There is no user record corresponding to this identifier. The user may have been deleted."
+        ) {
+          alert("电子邮箱不正确或未注册");
+        } else if (errorMessage == "The email address is badly formatted.") {
+          alert("未输入电子邮箱或格式不正确");
         } else {
           alert(errorMessage);
         }
@@ -27,6 +34,7 @@ function Login() {
     <form class="loginBox" autocomplete="off">
       <p class="loginTitle">学生中心 | 登陆</p>
       <input
+        autoFocus
         autocomplete="off"
         placeholder="电子邮箱"
         class="loginEmail"

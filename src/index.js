@@ -20,11 +20,6 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.auth().onAuthStateChanged(firebaseUser => {
   if (firebaseUser) {
-  } else {
-  }
-});
-firebase.auth().onAuthStateChanged(firebaseUser => {
-  if (firebaseUser) {
     ReactDOM.render(<Score />, document.getElementById("root"));
   } else {
     ReactDOM.render(<Login />, document.getElementById("root"));
