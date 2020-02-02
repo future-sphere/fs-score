@@ -24,20 +24,27 @@ function Login() {
       });
   };
   return (
-    <form>
+    <form class="loginBox" autocomplete="off">
+      <p class="loginTitle">学生中心 | 登陆</p>
       <input
+        autocomplete="off"
+        placeholder="电子邮箱"
+        class="loginEmail"
         type="email"
         id="txtEmail"
         onChange={event => setEmail(event.target.value)}
         required
       ></input>
       <input
+        autocomplete="off"
+        placeholder="密码"
+        class="loginPassword"
         type="password"
         id="txtPassword"
         onChange={event => setPassword(event.target.value)}
         required
       ></input>
-      <button type="button" onClick={handleClick}>
+      <button class="loginButton" type="button" onClick={handleClick}>
         登录
       </button>
     </form>
