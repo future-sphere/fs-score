@@ -6,6 +6,14 @@ function Admin() {
   const uid = firebase.auth().currentUser.uid;
   const [studentName, setName] = useState("");
   // const [students, setStudents] = useState({});
+  const signOut = () => {
+    firebase
+      .auth()
+      .signOut()
+      .catch(function(error) {
+        // An error happened.
+      });
+  };
   useEffect(() => {
     firebase
       .database()
@@ -15,7 +23,14 @@ function Admin() {
         setName(snapshot.val().name);
       });
   }, []);
-  return <div>{studentName}</div>;
+  return (
+    <div>
+      {studentName}
+      <button class="signOutBtn" type="button" onClick={signOut}>
+        登出
+      </button>
+    </div>
+  );
 }
 
 export default Admin;

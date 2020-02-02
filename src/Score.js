@@ -10,7 +10,7 @@ function Score() {
   const [studentQuiz, setQuiz] = useState([]);
   const [studentExam, setExam] = useState([]);
   const [studentHW, setHW] = useState([]);
-  const handleClick = () => {
+  const signOut = () => {
     firebase
       .auth()
       .signOut()
@@ -56,7 +56,7 @@ function Score() {
         <p class="scoreTitle">
           {studentClass} | <p class="studentName">{studentName}</p>
         </p>
-        <button class="signOutBtn" type="button" onClick={handleClick}>
+        <button class="signOutBtn" type="button" onClick={signOut}>
           登出
         </button>
       </div>
@@ -67,7 +67,7 @@ function Score() {
           {studentQuiz.map((item, index) => (
             <li key={item}>
               <p class="listCounter">第 {index + 1} 次</p>
-              <div class="number">{item}</div>
+              <div class="number">{item}%</div>
             </li>
           ))}
         </ol>
@@ -76,7 +76,7 @@ function Score() {
           {studentExam.map((item, index) => (
             <li key={item}>
               <p class="listCounter">第 {index + 1} 个月</p>
-              <div class="number">{item}</div>
+              <div class="number">{item}%</div>
             </li>
           ))}
         </ol>
@@ -85,7 +85,7 @@ function Score() {
           {studentHW.map((item, index) => (
             <li key={item}>
               <p class="listCounter">第 {index + 1} 周</p>
-              <div class="number">{item}</div>
+              <div class="number">{item}%</div>
             </li>
           ))}
         </ol>
