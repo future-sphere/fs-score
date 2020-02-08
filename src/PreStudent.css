@@ -1,0 +1,16 @@
+.info {
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  list-style: none;
+  display: block;
+}
+.title {
+  font-size: 20px;
+}
+ul li {
+  margin: 20px 0;
+}
+a:hover {
+  color: #00b2ff;
+}

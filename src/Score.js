@@ -66,8 +66,8 @@ function Score() {
           <p class="subTitle">测验</p>
           {studentQuiz.map((item, index) => (
             <li key={item}>
-              <p class="listCounter">第 {index + 1} 次</p>
-              <div class="number">{item}%</div>
+              <p class="listCounter">测验 {index + 1}</p>
+              <div class="number">{item} %</div>
             </li>
           ))}
         </ol>
@@ -75,17 +75,17 @@ function Score() {
           <p class="subTitle">考试</p>
           {studentExam.map((item, index) => (
             <li key={item}>
-              <p class="listCounter">第 {index + 1} 个月</p>
-              <div class="number">{item}%</div>
+              <p class="listCounter">月考 {index + 1}</p>
+              <div class="number">{item} %</div>
             </li>
           ))}
         </ol>
         <ol>
           <p class="subTitle">作业</p>
           {studentHW.map((item, index) => (
-            <li key={item}>
+            <li key={item} id="score">
               <p class="listCounter">第 {index + 1} 周</p>
-              <div class="number">{item}%</div>
+              <div class="number">{item} %</div>
             </li>
           ))}
         </ol>

@@ -4,6 +4,7 @@ import "./index.css";
 import Login from "./Login";
 import Score from "./Score";
 import Admin from "./Admin";
+import PreStudent from "./PreStudent";
 import * as serviceWorker from "./serviceWorker";
 import * as firebase from "firebase";
 
@@ -27,8 +28,10 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
       .ref("Student/" + uid)
       .once("value")
       .then(function(snapshot) {
-        if (snapshot.val().class == "管理员") {
+        if (snapshot.val().class === "管理员") {
           ReactDOM.render(<Admin />, document.getElementById("root"));
+        } else if (snapshot.val().class === "预备学生") {
+          ReactDOM.render(<PreStudent />, document.getElementById("root"));
         } else {
           ReactDOM.render(<Score />, document.getElementById("root"));
         }
