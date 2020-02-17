@@ -29,6 +29,15 @@ function PreStudent() {
   }, []);
   return (
     <div>
+      <div class="links">
+        <div>
+          <img
+            class="logo"
+            src="https://res.cloudinary.com/dtgh01qqo/image/upload/v1578112543/FutureSphere/logo%E9%95%BF%E6%96%B9%E5%BD%A2%E9%80%8F%E6%98%8E%E8%83%8C%E6%99%AF.png"
+            alt="logo"
+          ></img>
+        </div>
+      </div>
       <div class="header">
         <p class="scoreTitle">
           {studentClass} | <p class="studentName">{studentName}</p>
@@ -37,42 +46,20 @@ function PreStudent() {
           登出
         </button>
       </div>
-      <div class="info">
+      <div class="infoBlocks">
         <p class="title">资料：</p>
-        <ul>
-          <li>
-            <a
-              href="https://docs.google.com/document/d/1isqUoKofWTI_lelEK0sGHRBD7xKXtX5-JdEflC3N4mw/edit#"
-              target="_blank"
-            >
-              软件工程师旗舰课课前准备
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://docs.google.com/document/d/19f-wQ5hChGWb5ukFgprDJ5pF3dbpb2TT5bm8Y8qcWwo/edit"
-              target="_blank"
-            >
-              就业保证计划合同
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://docs.google.com/document/d/1tFr5YcRMMfyxgzJv6wp2FLOiDmy4HO061Og9cDWVdek/edit"
-              target="_blank"
-            >
-              上课设备推荐
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://docs.google.com/spreadsheets/d/1qHvSKCpCPGxUNdCbTHoeuwQPEq9WZRay6B9Wyu7qVrI/edit?usp=sharing"
-              target="_blank"
-            >
-              上课时间安排
-            </a>
-          </li>
-        </ul>
+        <a class="infoBlock" href="/files/Contract.pdf" target="_blank">
+          <i class="fas fa-file-pdf"></i>就业保证计划合同
+        </a>
+        <a class="infoBlock" href="/files/设备推荐.pdf" target="_blank">
+          <i class="fas fa-file-pdf"></i> 上课设备推荐
+        </a>
+        <a class="infoBlock" href="/files/课程安排.pdf" target="_blank">
+          <i class="fas fa-file-pdf"></i> 上课时间安排
+        </a>
+        <a class="infoBlock" href="/files/课程安排.pdf" target="_blank">
+          <i class="fas fa-file-pdf"></i> 上课时间安排
+        </a>
       </div>
     </div>
   );

@@ -91,65 +91,28 @@ function Score() {
         </ol>
       </div>
       <p class="infoTitle">资料:</p>
-      <div>
-      <ul class="studentInfoList">
-          <li>
-            <a
-              href="https://docs.google.com/document/d/19f-wQ5hChGWb5ukFgprDJ5pF3dbpb2TT5bm8Y8qcWwo/edit"
-              target="_blank"
-            >
-              就业保证计划合同
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://docs.google.com/document/d/1tFr5YcRMMfyxgzJv6wp2FLOiDmy4HO061Og9cDWVdek/edit"
-              target="_blank"
-            >
-              上课设备推荐
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://docs.google.com/spreadsheets/d/1qHvSKCpCPGxUNdCbTHoeuwQPEq9WZRay6B9Wyu7qVrI/edit?usp=sharing"
-              target="_blank"
-            >
-              上课时间安排
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://docs.google.com/document/d/1eDgvOFgDxIwo-wdJXXyv5XTXwH_OIFADYAQ6hElgZ_8/edit"
-              target="_blank"
-            >
-              SE100 课程大纲
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://docs.google.com/document/d/1Bxphh1CACN_l8yMi8xw7d_a8SPKao7aoTIF-BmVsljE/edit"
-              target="_blank"
-            >
-              SE200 课程大纲
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://docs.google.com/document/d/15KZdBsbGDh9nfNKin4N5CWAK0jIkZaWNMJpqBQFmFL8/edit"
-              target="_blank"
-            >
-              SE300 课程大纲
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://docs.google.com/document/d/1xqHwtEz1jVSi6mgUQS41aX95re4SNkJPsfmKkmQXXdQ/edit"
-              target="_blank"
-            >
-              SE400 课程大纲
-            </a>
-          </li>
-        </ul>
+      <div class="infoBlocks">
+        <a class="infoBlock" href="/files/Contract.pdf" target="_blank">
+          <i class="fas fa-file-pdf"></i>就业保证计划合同
+        </a>
+        <a class="infoBlock" href="/files/设备推荐.pdf" target="_blank">
+          <i class="fas fa-file-pdf"></i> 上课设备推荐
+        </a>
+        <a class="infoBlock" href="/files/课程安排.pdf" target="_blank">
+          <i class="fas fa-file-pdf"></i> 上课时间安排
+        </a>
+        <a class="infoBlock" href="/files/SE100.pdf" target="_blank">
+          <i class="fas fa-file-pdf"></i> SE100 课程大纲
+        </a>
+        <a class="infoBlock" href="/files/SE200.pdf" target="_blank">
+          <i class="fas fa-file-pdf"></i> SE200 课程大纲
+        </a>
+        <a class="infoBlock" href="/files/SE300.pdf" target="_blank">
+          <i class="fas fa-file-pdf"></i> SE300 课程大纲
+        </a>
+        <a class="infoBlock" href="/files/SE400.pdf" target="_blank">
+          <i class="fas fa-file-pdf"></i> SE400 课程大纲
+        </a>
       </div>
     </div>
   );

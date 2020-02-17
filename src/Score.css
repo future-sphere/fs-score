@@ -71,15 +71,7 @@ ol li {
   margin: 0;
   padding-left: 30%;
 }
-@media only screen and (max-width: 1024px) {
-  .studentInfo {
-    display: block;
-  }
-  ol {
-    box-sizing: border-box;
-    width: 100%;
-  }
-}
+
 .linkHomework {
   font-size: 15px;
   text-decoration: none;
@@ -106,28 +98,40 @@ ol li {
 .logo {
   height: 35px;
 }
-.scoreTitle{
+.infoTitle {
   margin-left: 30px;
   font-size: 30px;
   margin-bottom: 0;
 }
-.infoTitle{
-  margin-left: 30px;
-  font-size: 30px;
-  margin-bottom: 0;
+.infoBlocks {
+  margin: 0 30px;
 }
-.studentInfoList{
-  list-style: none;
-  padding: 0 30px;
-  
-}
-.studentInfoList li{
+.infoBlock {
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  width: 20%;
   margin: 0;
   padding: 20px 10px;
-  width: 100%;
   box-sizing: border-box;
+  text-decoration: none;
 }
-.studentInfoList li:hover{
+.infoBlock i {
+  margin-right: 10px;
+}
+.infoBlock:hover {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
+}
+@media only screen and (max-width: 1024px) {
+  .studentInfo {
+    display: block;
+  }
+  ol {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .infoBlock {
+    width: 100%;
+  }
 }
