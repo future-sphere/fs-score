@@ -57,8 +57,8 @@ function PreStudent() {
         <a class="infoBlock" href="/files/课程安排.pdf" target="_blank">
           <i class="fas fa-file-pdf"></i> 上课时间安排
         </a>
-        <a class="infoBlock" href="/files/课程安排.pdf" target="_blank">
-          <i class="fas fa-file-pdf"></i> 上课时间安排
+        <a class="infoBlock" href="/files/课前准备.pdf" target="_blank">
+          <i class="fas fa-file-pdf"></i> 旗舰课课前准备
         </a>
       </div>
     </div>
