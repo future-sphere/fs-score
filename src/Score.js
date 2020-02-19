@@ -18,6 +18,23 @@ function Score() {
         // An error happened.
       });
   };
+  const changePassword = () => {
+    const pw1 = window.prompt("请输入新密码");
+    const pw2 = window.prompt("请再次输入新密码");
+    const user = firebase.auth().currentUser;
+    if (pw1 === pw2) {
+      user
+        .updatePassword(pw1)
+        .then(function() {
+          alert("密码修改成功！");
+        })
+        .catch(function(error) {
+          alert("密码修改失败！");
+        });
+    } else {
+      alert("两次输入的密码不一致");
+    }
+  };
   useEffect(() => {
     firebase
       .database()
@@ -58,6 +75,9 @@ function Score() {
         </p>
         <button class="signOutBtn" type="button" onClick={signOut}>
           登出
+        </button>
+        <button class="signOutBtn" type="button" onClick={changePassword}>
+          更改密码
         </button>
       </div>
       <p class="infoTitle">成绩:</p>
