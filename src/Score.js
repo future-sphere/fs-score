@@ -60,7 +60,7 @@ function Score() {
           登出
         </button>
       </div>
-      <p class="scoreTitle">成绩:</p>
+      <p class="infoTitle">成绩:</p>
       <div class="studentInfo">
         <ol>
           <p class="subTitle">测验</p>
