@@ -84,30 +84,42 @@ function Score() {
       <div class="studentInfo">
         <ol>
           <p class="subTitle">测验</p>
-          {studentQuiz.map((item, index) => (
-            <li key={item}>
-              <p class="listCounter">测验 {index + 1}</p>
-              <div class="number">{item} %</div>
-            </li>
-          ))}
+          {studentQuiz === undefined ? (
+            <p>暂无成绩</p>
+          ) : (
+            studentQuiz.map((item, index) => (
+              <li key={item}>
+                <p class="listCounter">测验 {index + 1}</p>
+                <div class="number">{item} %</div>
+              </li>
+            ))
+          )}
         </ol>
         <ol>
-          <p class="subTitle">考试</p>
-          {studentExam.map((item, index) => (
-            <li key={item}>
-              <p class="listCounter">月考 {index + 1}</p>
-              <div class="number">{item} %</div>
-            </li>
-          ))}
+          <p class="subTitle">考试:</p>
+          {studentExam === undefined ? (
+            <p>暂无成绩</p>
+          ) : (
+            studentExam.map((item, index) => (
+              <li key={item}>
+                <p class="listCounter">测验 {index + 1}</p>
+                <div class="number">{item} %</div>
+              </li>
+            ))
+          )}
         </ol>
         <ol>
-          <p class="subTitle">作业</p>
-          {studentHW.map((item, index) => (
-            <li key={item} id="score">
-              <p class="listCounter">第 {index + 1} 周</p>
-              <div class="number">{item} %</div>
-            </li>
-          ))}
+          <p class="subTitle">作业:</p>
+          {studentHW === undefined ? (
+            <p>暂无成绩</p>
+          ) : (
+            studentHW.map((item, index) => (
+              <li key={item}>
+                <p class="listCounter">测验 {index + 1}</p>
+                <div class="number">{item} %</div>
+              </li>
+            ))
+          )}
         </ol>
       </div>
       <p class="infoTitle">资料:</p>
