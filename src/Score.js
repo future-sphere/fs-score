@@ -102,7 +102,7 @@ function Score() {
           ) : (
             studentExam.map((item, index) => (
               <li key={item}>
-                <p class="listCounter">测验 {index + 1}</p>
+                <p class="listCounter">月考 {index + 1}</p>
                 <div class="number">{item} %</div>
               </li>
             ))
@@ -115,7 +115,7 @@ function Score() {
           ) : (
             studentHW.map((item, index) => (
               <li key={item}>
-                <p class="listCounter">测验 {index + 1}</p>
+                <p class="listCounter">第 {index + 1} 周</p>
                 <div class="number">{item} %</div>
               </li>
             ))
