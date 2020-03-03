@@ -148,20 +148,54 @@ function Score() {
       </div>
       <p class="infoTitle">视频:</p>
       <div class="infoBlocks">
-        <a class="infoBlock" href="https://vimeo.com/395087772/f1d0a55a2d" target="_blank">
-        <i class="fas fa-video"></i>通过React使用HTTP数据 Part1
+        <a
+          class="infoBlock"
+          href="https://vimeo.com/395087772/f1d0a55a2d"
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>通过React使用HTTP数据 05-A
         </a>
-        <a class="infoBlock" href="https://vimeo.com/395086605/aadda1c8d3" target="_blank">
-        <i class="fas fa-video"></i>通过React使用HTTP数据 Part2
+        <a
+          class="infoBlock"
+          href="https://vimeo.com/395086605/aadda1c8d3"
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>通过React使用HTTP数据 05-B
         </a>
-        <a class="infoBlock" href="https://vimeo.com/395086460/89aa6141e5" target="_blank">
-        <i class="fas fa-video"></i>如何给页面增加覆盖层 Part1
+        <a
+          class="infoBlock"
+          href="https://vimeo.com/395086460/89aa6141e5"
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>如何给页面增加覆盖层 06-A
         </a>
-        <a class="infoBlock" href="https://vimeo.com/395086373/95bd2a6e65" target="_blank">
-        <i class="fas fa-video"></i>如何给页面增加覆盖层 Part2
+        <a
+          class="infoBlock"
+          href="https://vimeo.com/395086373/95bd2a6e65"
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>如何给页面增加覆盖层 06-B
         </a>
-        <a class="infoBlock" href="https://vimeo.com/395091203/ad41073f71" target="_blank">
-        <i class="fas fa-video"></i>React Hooks
+        <a
+          class="infoBlock"
+          href="https://vimeo.com/395091203/ad41073f71"
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>React Hooks 07
+        </a>
+        <a
+          class="infoBlock"
+          href="https://vimeo.com/395104039/b5642fc336"
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>React Router 08-A
+        </a>
+        <a
+          class="infoBlock"
+          href="https://vimeo.com/395104753/1558f575d1"
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>React Router 08-B
         </a>
       </div>
     </div>
