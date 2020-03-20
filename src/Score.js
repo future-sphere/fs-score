@@ -197,6 +197,62 @@ function Score() {
         >
           <i class="fas fa-video"></i>React Router 08-B
         </a>
+        <a
+          class="infoBlock"
+          href="https://vimeo.com/399043223/bd68e1dd83"
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>social-01-router-A
+        </a>
+        <a
+          class="infoBlock"
+          href="https://vimeo.com/399043634/fd7b6320bb"
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>social-01-router-B
+        </a>
+        <a
+          class="infoBlock"
+          href="https://vimeo.com/399043683/58a8343ee7"
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>social-01-router-C
+        </a>
+        <a
+          class="infoBlock"
+          href="https://vimeo.com/399043952/d161402093"
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>social-02-register-form-A
+        </a>
+        <a
+          class="infoBlock"
+          href="https://vimeo.com/395104753/1558f575d1"
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>social-02-register-form-B
+        </a>
+        <a
+          class="infoBlock"
+          href="https://vimeo.com/395104753/1558f575d1"
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>social-02-register-form-C
+        </a>
+        <a
+          class="infoBlock"
+          href="https://vimeo.com/399048177/dfe76e6acb"
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>social-02-register-form-D
+        </a>
+        <a
+          class="infoBlock"
+          href="https://vimeo.com/399047360/529dc49503"
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>social-02-register-form-E
+        </a>
       </div>
     </div>
   );
