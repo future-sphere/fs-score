@@ -5,7 +5,7 @@ body {
   margin-top: 20px;
   font-size: 20px;
   font-weight: 100;
-  display: inline-block;
+  margin-bottom: 0;
 }
 .studentName {
   color: #00b2ff;
@@ -16,7 +16,7 @@ body {
   padding: 2px 15px;
   background-color: #fff;
   border: 1px solid #00b2ff;
-  margin: 0 10px;
+  margin: 0 5px;
   border-radius: 10px;
   outline: none;
 }
@@ -123,6 +123,32 @@ ol li {
 .infoBlock:hover {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
+}
+.dropState{
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  box-sizing: border-box;
+  height: 22px;
+  width: 130px;
+  padding: 3px;
+  margin-left: 5px;
+  border-radius: 20px;
+}
+.dropState i{
+  margin-right: 5px;
+}
+.dropTrue{
+  color: #ff0000;
+  border: 0.5px solid #ff0000;
+}
+.dropFalse{
+  color: #00ff00;
+  border: 0.5px solid #00ff00;
+}
+.studentFunctions{
+  display: block;
+  margin-left: 25px;
 }
 @media only screen and (max-width: 1024px) {
   .studentInfo {

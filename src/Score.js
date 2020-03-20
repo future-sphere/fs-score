@@ -10,6 +10,7 @@ function Score() {
   const [studentQuiz, setQuiz] = useState([]);
   const [studentExam, setExam] = useState([]);
   const [studentHW, setHW] = useState([]);
+  const [studentDrop, setDrop] = useState(false);
   const signOut = () => {
     firebase
       .auth()
@@ -46,6 +47,7 @@ function Score() {
         setQuiz(snapshot.val().quiz);
         setExam(snapshot.val().exam);
         setHW(snapshot.val().homework);
+        setDrop(snapshot.val().isDrop)
       });
   }, []);
 
@@ -73,13 +75,16 @@ function Score() {
         <p class="studentTitle">
           {studentClass} | <p class="studentName">{studentName}</p>
         </p>
-        <button class="signOutBtn" type="button" onClick={signOut}>
-          登出
-        </button>
-        <button class="signOutBtn" type="button" onClick={changePassword}>
-          更改密码
-        </button>
-      </div>
+        
+      </div><div className="studentFunctions">
+          <button class="signOutBtn" type="button" onClick={signOut}>
+            登出
+          </button>
+          <button class="signOutBtn" type="button" onClick={changePassword}>
+            更改密码
+          </button>
+          {studentDrop?(<div className="dropState dropTrue" title="您已不在就业保证计划内"><i class="fas fa-times"></i>就业保证计划</div>):(<div className="dropState dropFalse"title="您在就业保证计划内"><i class="fas fa-check"></i>就业保证计划</div>)}
+        </div>
       <p class="infoTitle">成绩:</p>
       <div class="studentInfo">
         <ol>
@@ -122,7 +127,7 @@ function Score() {
           )}
         </ol>
       </div>
-      <p class="infoTitle">资料:</p>
+      {studentDrop ?(<div></div>): (<div><p class="infoTitle">资料:</p>
       <div class="infoBlocks">
         <a class="infoBlock" href="/files/Contract.pdf" target="_blank">
           <i class="fas fa-file-pdf"></i>就业保证计划合同
@@ -227,14 +232,14 @@ function Score() {
         </a>
         <a
           class="infoBlock"
-          href="https://vimeo.com/395104753/1558f575d1"
+          href="https://vimeo.com/399045634/7455a9a126"
           target="_blank"
         >
           <i class="fas fa-video"></i>social-02-register-form-B
         </a>
         <a
           class="infoBlock"
-          href="https://vimeo.com/395104753/1558f575d1"
+          href="https://vimeo.com/399048227/af6362870f"
           target="_blank"
         >
           <i class="fas fa-video"></i>social-02-register-form-C
@@ -253,7 +258,8 @@ function Score() {
         >
           <i class="fas fa-video"></i>social-02-register-form-E
         </a>
-      </div>
+      </div></div>)}
+      
     </div>
   );
 }
