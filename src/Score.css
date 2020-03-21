@@ -150,6 +150,14 @@ ol li {
   display: block;
   margin-left: 25px;
 }
+.alert{
+  box-sizing: border-box;
+  padding: 10px 5px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  background-color: rgb(255, 136, 1);
+}
 @media only screen and (max-width: 1024px) {
   .studentInfo {
     display: block;
@@ -160,5 +168,8 @@ ol li {
   }
   .infoBlock {
     width: 100%;
+  }
+  .alert{
+    font-size: 10px;
   }
 }
