@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import * as firebase from "firebase";
+import videos from "./constants/videos"
 import "./Score.css";
 
 function Score() {
@@ -156,111 +157,13 @@ function Score() {
       </div>
       <p class="infoTitle">视频:</p>
       <div class="infoBlocks">
-        <a
+        {videos.map(video=>(<a
           class="infoBlock"
-          href="https://vimeo.com/395087772/f1d0a55a2d"
+          href={video.link}
           target="_blank"
         >
-          <i class="fas fa-video"></i>通过React使用HTTP数据 05-A
-        </a>
-        <a
-          class="infoBlock"
-          href="https://vimeo.com/395086605/aadda1c8d3"
-          target="_blank"
-        >
-          <i class="fas fa-video"></i>通过React使用HTTP数据 05-B
-        </a>
-        <a
-          class="infoBlock"
-          href="https://vimeo.com/395086460/89aa6141e5"
-          target="_blank"
-        >
-          <i class="fas fa-video"></i>如何给页面增加覆盖层 06-A
-        </a>
-        <a
-          class="infoBlock"
-          href="https://vimeo.com/395086373/95bd2a6e65"
-          target="_blank"
-        >
-          <i class="fas fa-video"></i>如何给页面增加覆盖层 06-B
-        </a>
-        <a
-          class="infoBlock"
-          href="https://vimeo.com/395091203/ad41073f71"
-          target="_blank"
-        >
-          <i class="fas fa-video"></i>React Hooks 07
-        </a>
-        <a
-          class="infoBlock"
-          href="https://vimeo.com/395104039/b5642fc336"
-          target="_blank"
-        >
-          <i class="fas fa-video"></i>React Router 08-A
-        </a>
-        <a
-          class="infoBlock"
-          href="https://vimeo.com/395104753/1558f575d1"
-          target="_blank"
-        >
-          <i class="fas fa-video"></i>React Router 08-B
-        </a>
-        <a
-          class="infoBlock"
-          href="https://vimeo.com/399043223/bd68e1dd83"
-          target="_blank"
-        >
-          <i class="fas fa-video"></i>social-01-router-A
-        </a>
-        <a
-          class="infoBlock"
-          href="https://vimeo.com/399043634/fd7b6320bb"
-          target="_blank"
-        >
-          <i class="fas fa-video"></i>social-01-router-B
-        </a>
-        <a
-          class="infoBlock"
-          href="https://vimeo.com/399043683/58a8343ee7"
-          target="_blank"
-        >
-          <i class="fas fa-video"></i>social-01-router-C
-        </a>
-        <a
-          class="infoBlock"
-          href="https://vimeo.com/399043952/d161402093"
-          target="_blank"
-        >
-          <i class="fas fa-video"></i>social-02-register-form-A
-        </a>
-        <a
-          class="infoBlock"
-          href="https://vimeo.com/399045634/7455a9a126"
-          target="_blank"
-        >
-          <i class="fas fa-video"></i>social-02-register-form-B
-        </a>
-        <a
-          class="infoBlock"
-          href="https://vimeo.com/399048227/af6362870f"
-          target="_blank"
-        >
-          <i class="fas fa-video"></i>social-02-register-form-C
-        </a>
-        <a
-          class="infoBlock"
-          href="https://vimeo.com/399048177/dfe76e6acb"
-          target="_blank"
-        >
-          <i class="fas fa-video"></i>social-02-register-form-D
-        </a>
-        <a
-          class="infoBlock"
-          href="https://vimeo.com/399047360/529dc49503"
-          target="_blank"
-        >
-          <i class="fas fa-video"></i>social-02-register-form-E
-        </a>
+          <i class="fas fa-video"></i>{video.title}
+        </a>))}
       </div></div>)}
       
     </div>
