@@ -60,27 +60,27 @@ const videos = [
         link:"https://vimeo.com/399047360/529dc49503"
     },
     {
-        title:"social-03-file-upload-login-a",
+        title:"social-03-file-upload-login-A",
         link:"https://vimeo.com/399050575/070184c7b8"
     },
     {
-        title:"social-03-file-upload-login-b",
+        title:"social-03-file-upload-login-B",
         link:"https://vimeo.com/399342899/a7203e9276"
     },
     {
-        title:"重新上传中...",
-        link:"/"
+        title:"social-04-jwt",
+        link:"https://vimeo.com/399356471/e303e0ce8a"
     },
     {
-        title:"social-05-context-a",
+        title:"social-05-context-A",
         link:"https://vimeo.com/399359847/7ffc727002"
     },
     {
-        title:"social-05-context-b",
+        title:"social-05-context-B",
         link:"https://vimeo.com/399360209/791c0b16ca"
     },
     {
-        title:"social-05-context-c",
+        title:"social-05-context-C",
         link:"https://vimeo.com/399360289/9f8e84540d"
     },
     {
