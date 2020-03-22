@@ -87,6 +87,14 @@ const videos = [
         title:"social-06-api-env",
         link:"https://vimeo.com/399361636/a183f5ca1f"
     },
+    {
+        title:"旗舰①班 03/21 录像",
+        link:"https://vimeo.com/399549578/6b1c57f7fb"
+    },
+    {
+        title:"旗舰②班 03/21 录像",
+        link:"https://vimeo.com/399549794/57f1e90f1c"
+    },
 ]
 
 export default videos;
