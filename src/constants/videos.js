@@ -95,6 +95,14 @@ const videos = [
         title:"旗舰②班 03/21 录像",
         link:"https://vimeo.com/399549794/57f1e90f1c"
     },
+    {
+        title:"旗舰①班 03/22 录像",
+        link:"https://vimeo.com/399752376/ee945ae584"
+    },
+    {
+        title:"旗舰②班 03/22 录像",
+        link:"https://vimeo.com/399763960/1c9f1230a7"
+    },
 ]
 
 export default videos;
