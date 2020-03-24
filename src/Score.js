@@ -157,13 +157,42 @@ function Score() {
       </div>
       <p class="infoTitle">视频:</p>
       <div class="infoBlocks">
-        {videos.map(video=>(<a
+      <div>
+          <p className="videoTitle">Javascript 教学系列</p>
+          {videos.map(video=>{if(video.topic === "JS"){return(<a
           class="infoBlock"
           href={video.link}
           target="_blank"
         >
           <i class="fas fa-video"></i>{video.title}
-        </a>))}
+        </a>)}})}</div>
+        <div>
+          <p className="videoTitle">React 教学系列</p>
+          {videos.map(video=>{if(video.topic === "react"){return(<a
+          class="infoBlock"
+          href={video.link}
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>{video.title}
+        </a>)}})}</div>
+        <div>
+          <p className="videoTitle">Social Project 教学系列</p>
+          {videos.map(video=>{if(video.topic === "social"){return(<a
+          class="infoBlock"
+          href={video.link}
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>{video.title}
+        </a>)}})}</div>
+        <div>
+          <p className="videoTitle">每日课程录像</p>
+          {videos.map(video=>{if(video.topic === "record"){return(<a
+          class="infoBlock"
+          href={video.link}
+          target="_blank"
+        >
+          <i class="fas fa-video"></i>{video.title}
+        </a>)}})}</div>
       </div></div>)}
       
     </div>

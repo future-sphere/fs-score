@@ -158,6 +158,12 @@ ol li {
   color: #fff;
   background-color: rgb(255, 136, 1);
 }
+.videoTitle{
+  color: #00b2ff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
 @media only screen and (max-width: 1024px) {
   .studentInfo {
     display: block;
