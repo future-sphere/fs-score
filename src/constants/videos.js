@@ -164,6 +164,41 @@ const videos = [
         link:"https://vimeo.com/400121895/8d37e5ddcf"
         ,topic:"JS"
     },
+    {
+        title:"旗舰①班 03/28 录像",
+        link:"https://vimeo.com/401748393/8f1f8fcda3"
+        ,topic:"record"
+    },
+    {
+        title:"旗舰②班 03/28 录像",
+        link:"https://vimeo.com/401759485/61c0541dd1"
+        ,topic:"record"
+    },
+    {
+        title:"js-05",
+        link:"https://vimeo.com/401931103/14d966e215"
+        ,topic:"JS"
+    },
+    {
+        title:"js-06-loop-A",
+        link:"https://vimeo.com/401931447/05c9920ee6"
+        ,topic:"JS"
+    },
+    {
+        title:"js-06-loop-B",
+        link:"https://vimeo.com/401932242/a9f0117023"
+        ,topic:"JS"
+    },
+    {
+        title:"js-06-loop-C",
+        link:"https://vimeo.com/401932584/d4cb1e4485"
+        ,topic:"JS"
+    },
+    {
+        title:"js-07-arrayobj-merhods-a",
+        link:"https://vimeo.com/401933254/87fdc883a2"
+        ,topic:"JS"
+    },
 ]
 
 export default videos;
