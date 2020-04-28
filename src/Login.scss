@@ -1,0 +1,41 @@
+$--input-padding-x: 1.5rem;
+$--input-padding-y: 0.75rem;
+
+.login-container {
+	background-color: #fff;
+
+	.login,
+	.image {
+		min-height: 100vh;
+	}
+
+	.bg-image {
+		background-image: url('https://res.cloudinary.com/dtgh01qqo/image/upload/v1577467857/FutureSphere/wework/LIC_GOT_LOUNGE.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.login-heading {
+		font-weight: 300;
+	}
+
+	.btn-login {
+		font-size: 0.9rem;
+		letter-spacing: 0.05rem;
+		padding: 0.75rem 1rem;
+		border-radius: 2rem;
+	}
+
+	.form-label-group {
+		position: relative;
+		margin-bottom: 1rem;
+	}
+
+	.form-label-group > input {
+		padding: $--input-padding-y $--input-padding-x;
+		height: auto;
+		border: 1px solid #eee;
+		border-radius: 0.5rem;
+		width: 100%;
+	}
+}

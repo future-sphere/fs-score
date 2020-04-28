@@ -1,0 +1,54 @@
+.logo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	border-bottom: 1px solid #eee;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+nav.navbar {
+	// background-color: #fff;
+	// box-shadow: none;
+	// width: 100%;
+}
+
+.main-panel {
+	h2.navbar-brand {
+		font-size: 28px;
+		font-weight: 900;
+	}
+}
+
+.main-panel {
+	.content {
+		margin: 0;
+		padding: 20px 0;
+		.card-icon {
+			font-size: 18px;
+			font-weight: 900;
+		}
+	}
+}
+
+.sidebar-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	.nav {
+		margin-top: 0;
+		padding-top: 15px;
+	}
+
+	.bottom-nav {
+		padding: 30px 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
