@@ -1,0 +1,32 @@
+.files-container {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-row-gap: 25px;
+	margin: 0;
+	width: 100%;
+
+	.fileIcon {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition-duration: 0.8s;
+
+		&:hover {
+			a {
+				color: #999;
+			}
+			i {
+				color: #f44336a1;
+			}
+		}
+
+		i {
+			color: #f44336;
+		}
+		a {
+			color: #333;
+			font-weight: 500;
+		}
+	}
+}

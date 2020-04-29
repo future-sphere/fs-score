@@ -1,0 +1,43 @@
+.videos-container {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-row-gap: 25px;
+	margin: 0;
+	width: 100%;
+
+	.video-block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition-duration: 0.8s;
+
+		&:hover {
+			cursor: pointer;
+			a {
+				color: #999;
+			}
+			i {
+				color: #f47f36d4;
+			}
+		}
+
+		i {
+			color: #f47f36;
+			position: relative;
+
+			.number {
+				position: absolute;
+				font-size: 12px;
+				left: 0%;
+				font-family: 'Courier New', Courier, monospace;
+				color: #fff;
+			}
+		}
+		a {
+			color: #333;
+			text-align: center;
+			font-weight: 500;
+		}
+	}
+}

@@ -7,6 +7,8 @@ import './Material.scss';
 import './index.scss';
 import Scores from '../../components/Scores';
 import AlertBanner from '../../components/AlertBanner';
+import DocsPage from '../Docs';
+import VideosPage from '../Videos';
 
 export default function StudentCenterPage() {
 	const user = auth().currentUser || {};
@@ -53,6 +55,8 @@ export default function StudentCenterPage() {
 								/>
 							)}
 						/>
+						<Route exact path='/docs' render={() => <DocsPage />} />
+						<Route exact path='/videos' render={() => <VideosPage />} />
 					</React.Fragment>
 
 					<Footer />
