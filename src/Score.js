@@ -5,7 +5,6 @@ import videos from './constants/videos';
 import './Score.css';
 import AlertBanner from './components/AlertBanner';
 import Navbar from './components/Navbar';
-import StudentHeader from './components/StudentHeader';
 import Scores from './components/Scores';
 
 function Score() {
@@ -63,13 +62,6 @@ function Score() {
 		<div>
 			<AlertBanner />
 			<Navbar />
-			<StudentHeader
-				classInfo={studentClass}
-				name={studentName}
-				signOut={signOut}
-				changePassword={changePassword}
-				studentDrop={studentDrop}
-			/>
 			<Scores
 				studentExam={studentExam}
 				studentQuiz={studentQuiz}
