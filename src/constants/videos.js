@@ -57,39 +57,39 @@ const videoLists = [
 		links: [
 			{
 				title: '文件管理（上）',
-				link: 'https://vimeo.com/399764487/567bd2ce38',
+				link: 'https://youtu.be/wXbfDNQP_X0',
 			},
 			{
 				title: '文件管理（下）',
-				link: 'https://vimeo.com/399764487/567bd2ce38',
+				link: 'https://youtu.be/OzX5V-LxIhI',
 			},
 			{
 				title: '组件管理（上）',
-				link: 'https://vimeo.com/399764907/fc53447b8d',
+				link: 'https://youtu.be/BIFZxp9F_ys',
 			},
 			{
 				title: '组件管理（下）',
-				link: 'https://vimeo.com/399765090/7e909d0992',
+				link: 'https://youtu.be/4q-O759nImY',
 			},
 			{
 				title: 'Props（上）',
-				link: 'https://vimeo.com/401934216/7560ea3d1f',
+				link: 'https://youtu.be/QDXuqOmxAJM',
 			},
 			{
 				title: 'Props（中）',
-				link: 'https://vimeo.com/401935775/03a1c44720',
+				link: 'https://youtu.be/bKNp8iBRPsQ',
 			},
 			{
 				title: 'Props（下）',
-				link: 'https://vimeo.com/401936757/79f13a5c39',
+				link: 'https://youtu.be/EHZZjUsJLEo',
 			},
 			{
 				title: 'State',
-				link: 'https://vimeo.com/401937494/411e28eea9',
+				link: 'https://youtu.be/XxhaEc2a_bo',
 			},
 			{
 				title: 'Todo List',
-				link: 'https://vimeo.com/404411602/cf2cd24be2',
+				link: 'https://youtu.be/EV25KzqBukY',
 			},
 			{
 				title: 'HTTP请求（上）',
@@ -122,63 +122,63 @@ const videoLists = [
 		links: [
 			{
 				title: 'Router（上）',
-				link: 'https://vimeo.com/399043223/bd68e1dd83',
+				link: 'https://youtu.be/ufgm1NAXbYI',
 			},
 			{
 				title: 'Router（中）',
-				link: 'https://vimeo.com/399043634/fd7b6320bb',
+				link: 'https://youtu.be/l5DUEA-xjTI',
 			},
 			{
 				title: 'Router（下）',
-				link: 'https://vimeo.com/399043683/58a8343ee7',
+				link: 'https://youtu.be/VDQ1XcwOWbc',
 			},
 			{
 				title: '注册（1/5）',
-				link: 'https://vimeo.com/399043952/d161402093',
+				link: 'https://youtu.be/ywhmOFSidQ0',
 			},
 			{
 				title: '注册（2/5）',
-				link: 'https://vimeo.com/399045634/7455a9a126',
+				link: 'https://youtu.be/XH1wRL1tVNU',
 			},
 			{
 				title: '注册（3/5）',
-				link: 'https://vimeo.com/399048227/af6362870f',
+				link: 'https://youtu.be/8ijm6-RtFMc',
 			},
 			{
 				title: '注册（4/5）',
-				link: 'https://vimeo.com/399048177/dfe76e6acb',
+				link: 'https://youtu.be/zOtW8KZmFnQ',
 			},
 			{
 				title: '注册（5/5)',
-				link: 'https://vimeo.com/399047360/529dc49503',
+				link: 'https://youtu.be/NJj1oXA6O4w',
 			},
 			{
 				title: '上传文件（1/2）',
-				link: 'https://vimeo.com/399050575/070184c7b8',
+				link: 'https://youtu.be/svj7JB600ys',
 			},
 			{
 				title: '上传文件（2/2）',
-				link: 'https://vimeo.com/399342899/a7203e9276',
+				link: 'https://youtu.be/ULJMRZOrIOk',
 			},
 			{
 				title: 'JWT验证登录状态',
-				link: 'https://vimeo.com/399356471/e303e0ce8a',
+				link: 'https://youtu.be/DOYkdngLhhA',
 			},
 			{
 				title: '全局状态Context（1/3）',
-				link: 'https://vimeo.com/399359847/7ffc727002',
+				link: 'https://youtu.be/U6Oisiq-8Vo',
 			},
 			{
 				title: '全局状态Context（2/3）',
-				link: 'https://vimeo.com/399360209/791c0b16ca',
+				link: 'https://youtu.be/dX765SQ4z-0',
 			},
 			{
 				title: '全局状态Context（3/3）',
-				link: 'https://vimeo.com/399360289/9f8e84540d',
+				link: 'https://youtu.be/pmkFwzxWvVc',
 			},
 			{
 				title: '环境变量',
-				link: 'https://vimeo.com/399361636/a183f5ca1f',
+				link: 'https://youtu.be/GI3OkqMgqWs',
 			},
 		],
 	},
