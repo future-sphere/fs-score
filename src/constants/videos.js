@@ -93,27 +93,31 @@ const videoLists = [
 			},
 			{
 				title: 'HTTP请求（上）',
-				link: 'https://vimeo.com/395087772/f1d0a55a2d',
+				link: 'https://youtu.be/VFanqbip7fY',
 			},
 			{
 				title: 'HTTP请求（下）',
-				link: 'https://vimeo.com/395086605/aadda1c8d3',
+				link: 'https://youtu.be/zAN26qIMZl8',
 			},
 			{
-				title: 'Ref和覆盖层',
-				link: 'https://vimeo.com/395086460/89aa6141e5',
+				title: 'Ref和覆盖层（上）',
+				link: 'https://youtu.be/29mLclbhxdw',
+			},
+			{
+				title: 'Ref和覆盖层（下）',
+				link: 'https://youtu.be/QEP081cOh2o',
 			},
 			{
 				title: 'Hooks',
-				link: 'https://vimeo.com/395091203/ad41073f71',
+				link: 'https://youtu.be/JhuBB6-SZ8g',
 			},
 			{
 				title: 'React Router（上）',
-				link: 'https://vimeo.com/395104039/b5642fc336',
+				link: 'https://youtu.be/CcRyPU_OZZw',
 			},
 			{
 				title: 'React Router（下）',
-				link: 'https://vimeo.com/395104753/1558f575d1',
+				link: 'https://youtu.be/sx-Il4rEq4w',
 			},
 		],
 	},
@@ -186,7 +190,12 @@ const videoLists = [
 		title: '1班录课视频',
 		links: [
 			{
-				title: '',
+				title: '0405 面试必看',
+				link: 'https://youtu.be/DODhVh4q67k',
+			},
+			{
+				title: '0405 面试必看',
+				link: 'https://youtu.be/DODhVh4q67k',
 			},
 		],
 	},
@@ -194,7 +203,28 @@ const videoLists = [
 		title: '2班录课视频',
 		links: [
 			{
-				title: '',
+				title: '0405 ProTips网站设计代码示范',
+				link: 'https://www.youtube.com/watch?v=FxjSv9FIAm0',
+			},
+			{
+				title: 'Todolist（上）',
+				link: 'https://youtu.be/0o2KzyqK2qk',
+			},
+			{
+				title: 'Todolist（下）',
+				link: 'https://youtu.be/W8FyOGh08xM',
+			},
+			{
+				title: 'Lifecycle + todolist深入讲解',
+				link: 'https://youtu.be/RVSTkrrcXz8',
+			},
+			{
+				title: 'AsyncAwait & Promise & Kanban深入讲解',
+				link: 'https://www.youtube.com/watch?v=XkV-RyWdaMk',
+			},
+			{
+				title: '0502 英雄联盟React',
+				link: 'https://youtu.be/A7TXbofbgK4',
 			},
 		],
 	},
