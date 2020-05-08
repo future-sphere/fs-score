@@ -193,10 +193,6 @@ const videoLists = [
 				title: '0405 面试必看',
 				link: 'https://youtu.be/DODhVh4q67k',
 			},
-			{
-				title: '0405 面试必看',
-				link: 'https://youtu.be/DODhVh4q67k',
-			},
 		],
 	},
 	{
