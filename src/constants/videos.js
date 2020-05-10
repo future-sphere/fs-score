@@ -222,6 +222,10 @@ const videoLists = [
 				title: '0502 英雄联盟React',
 				link: 'https://youtu.be/A7TXbofbgK4',
 			},
+			{
+				title: '0509 React Pagination/Dropdown/Modal/Popup',
+				link: 'https://youtu.be/ih30RtFOilw',
+			},
 		],
 	},
 ];
