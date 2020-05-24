@@ -226,6 +226,11 @@ const videoLists = [
 				title: '0509 React Pagination/Dropdown/Modal/Popup',
 				link: 'https://youtu.be/ih30RtFOilw',
 			},
+			{
+				title:
+					'0523 二班录课视频 Typescript + Node.js/Express.js + Controllers',
+				link: 'https://www.youtube.com/watch?v=y-E4QyVRV38',
+			},
 		],
 	},
 ];
