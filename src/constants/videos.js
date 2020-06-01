@@ -231,6 +231,18 @@ const videoLists = [
 					'0523 二班录课视频 Typescript + Node.js/Express.js + Controllers',
 				link: 'https://www.youtube.com/watch?v=y-E4QyVRV38',
 			},
+			{
+				title: '成人二班 0530 MongoDB Operators 上',
+				link: 'https://www.youtube.com/watch?v=mTHejO8Wv9M',
+			},
+			{
+				title: '成人二班 0530 MongoDB Operators 下',
+				link: 'https://www.youtube.com/watch?v=Ycz69yuYle0',
+			},
+			{
+				title: '0531 成人二班 $Lookup + 文件上传',
+				link: 'https://www.youtube.com/watch?v=R5yH18GpHhM',
+			},
 		],
 	},
 ];
