@@ -243,6 +243,10 @@ const videoLists = [
 				title: '0531 成人二班 $Lookup + 文件上传',
 				link: 'https://www.youtube.com/watch?v=R5yH18GpHhM',
 			},
+			{
+				title: '0606 成人二班 部署Node到Heroku+JWT登录注册',
+				link: 'https://youtu.be/hwUETSvFzhM',
+			},
 		],
 	},
 ];
