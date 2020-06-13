@@ -1,10 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.scss';
 import { auth } from '../../services/firebase';
 
 function Login() {
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
+	const [welcome, setWelcome] = useState("")
+
+	useEffect(()=>{
+		const currTime = new Date();
+		const currHour = currTime.getHours();
+		console.log(currHour)
+		if(currHour >= 6 && currHour <= 8){
+			setWelcome("早上好！")
+		}
+		else if(currHour >= 9 && currHour <= 11){
+			setWelcome("上午好！")
+		}
+		else if(currHour >= 12 && currHour <= 14){
+			setWelcome("中午好！")
+		}
+		else if(currHour >= 13 && currHour <= 18){
+			setWelcome("下午好！")
+		}
+		else if(currHour >= 19 || currHour <= 5){
+			setWelcome("晚上好！")
+		}
+		else{
+			setWelcome("欢迎回来")
+		}
+	},[])
+
 	const handleClick = () => {
 		console.log(email, password);
 		auth()
@@ -51,7 +77,7 @@ function Login() {
 								<div className='row'>
 									<div className='col-md-9 col-lg-8 mx-auto'>
 										<h2 className='login-heading mb-4'>未来领域 | 学生中心</h2>
-										<h3 className='login-heading mb-4'>Welcome back!</h3>
+										<h3 className='login-heading mb-4'>{welcome}</h3>
 										<form onSubmit={(e) => e.preventDefault()}>
 											<div className='form-label-group'>
 												<input
@@ -80,7 +106,7 @@ function Login() {
 												className='btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2'
 												type='submit'
 											>
-												Sign in
+												登录
 											</button>
 											{/* <div className='text-center'>
 											<a className='small' href='#'>
